@@ -75,10 +75,10 @@ def comparator(compareImage):
     result = [False]*len(trainedEncodings)
     #using try block to avoid error in case test image face cannot be identified
     try:
-        # use the following to see the image with a rectangle
-        # for multiface run it multiple times and change the index in faceloc below
+        # #use the following to see the image with a rectangle
+        # #for multiface run it multiple times and change the index in faceloc below
         # compareImage = cv2.resize(compareImage, (0, 0), fx=0.15, fy=0.15)
-        # faceLoc = fr.face_locations(compareImage)[2]
+        # faceLoc = fr.face_locations(compareImage)[0]
         # cv2.rectangle(compareImage,(faceLoc[3],faceLoc[0]),(faceLoc[1],faceLoc[2]),(255,0,255),2)
         # cv2.imshow('Elon Test',compareImage)
         # cv2.waitKey(0)
@@ -123,7 +123,7 @@ def alpha():
     return : None
     """
     path = "./images/testing/"
-    testSubject = "DualTest2.jpg"
+    testSubject = "dual_test2.jpg"
     loadedImage = fr.load_image_file(path + testSubject)
     loadedImage = cv2.cvtColor(loadedImage,cv2.COLOR_BGR2RGB)
     result, keys = comparator(loadedImage)
