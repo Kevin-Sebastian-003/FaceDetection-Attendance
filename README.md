@@ -1,5 +1,6 @@
 # FaceDetection-Attendance
 please use this file for logging and sharing information. The final README will contain only required information and the logs will be transferred to project.log . Remember to provide documentation to all new content/existing content. 
+
 # 08-10-2020
 This is the second log by Kevin Sebastian. 
 
