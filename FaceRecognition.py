@@ -93,8 +93,8 @@ def comparator(compareImage):
             for i in range(0,size):
                 if res[i]!=result[i]:
                     result[i] = True
-    except:
-        print("Can't detect image")
+    except Exception as e:
+        print("Can't detect image",e)
     return result,list(trainedEncodingsDict.keys())
 
 def display_result(result, keys):

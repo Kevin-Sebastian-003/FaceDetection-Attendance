@@ -3,4 +3,5 @@ pip3 install cmake dlib face_recognition numpy opencv-python
 pip install cmake dlib face_recognition numpy opencv-python
 
 NOTE: when using ubuntu 20.04 do not install opencv using pip. instead 
-do the following sudo apt install libopencv-dev python3-opencv
+do the following :
+sudo apt install libopencv-dev python3-opencv
