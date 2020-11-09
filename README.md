@@ -3,6 +3,7 @@ This project manages attendance using face recognition from video sources like P
 please use this file for logging and sharing information. The final README will contain only required information and the logs will be transferred to project.log . Remember to provide documentation to all new content/existing content. 
 
 # Branch Information
+IMPORTANT : To avoid downloading everything, use $git clone --single-branch --branch <branchname> "link to repo"
 dataset - all images for testing
 dev1 - development on facerecogniton using dlib model
 dev2 - development on facerecogniton using facenet, openface, opencv dnn
