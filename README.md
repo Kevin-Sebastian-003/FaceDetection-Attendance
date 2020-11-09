@@ -2,6 +2,11 @@
 This project manages attendance using face recognition from video sources like PTZ cameras. Libraries used - face_recognition, opencv, numpy. Face recognition model was created by davisking using dlib.
 please use this file for logging and sharing information. The final README will contain only required information and the logs will be transferred to project.log . Remember to provide documentation to all new content/existing content. 
 
+# Branch Information
+dataset - all images for testing
+dev1 - development on facerecogniton using dlib model
+dev2 - development on facerecogniton using facenet, openface, opencv dnn
+dev3 - development using facenet by davidsandberg
 
 # Usage
 After cloning the repository to remote -
