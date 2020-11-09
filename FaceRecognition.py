@@ -33,7 +33,7 @@ def encoder():
         except:
             pass
     #json file wil contain the encoded data for each usn
-    with open('cached_encodings/json.txt', 'w') as outfile:
+    with open('cached_encodings/encoding.json', 'w') as outfile:
         json.dump(encoded, outfile)
     return encoded
 
@@ -45,14 +45,14 @@ def get_encoding():
     parameters : None
     return : list of encodings ((pre)processed for formatting)
     """
-    if os.path.isfile('cached_encodings/json.txt'):
+    if os.path.isfile('cached_encodings/encoding.txt'):
         #the following conversions are done as numpy array 
         #cannot be serialized and stored in json
         #format returned by json is stored in this dict
         rawEncodings = {}
         #usable format will be stored in the this dict
         encodings = {}
-        with open('cached_encodings/json.txt', 'r') as infile:
+        with open('cached_encodings/encoding.json', 'r') as infile:
             rawEncodings = json.load(infile)
         for key in rawEncodings.keys():
             #converting back to numpy array for further usage
@@ -123,7 +123,7 @@ def alpha():
     return : None
     """
     path = "./images/testing/"
-    testSubject = "dual_test2.jpg"
+    testSubject = "donald_trump1.jpg"
     loadedImage = fr.load_image_file(path + testSubject)
     loadedImage = cv2.cvtColor(loadedImage,cv2.COLOR_BGR2RGB)
     result, keys = comparator(loadedImage)

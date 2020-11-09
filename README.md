@@ -1,5 +1,6 @@
 # FaceDetection-Attendance
-please use this file for logging and sharing information. The final README will contain only required information and the logs will be transferred to project.log. Remember to provide documentation to all new content/existing content.
+please use this file for logging and sharing information. The final README will contain only required information and the logs will be transferred to project.log . Remember to provide documentation to all new content/existing content. 
+
 
 # Usage
 After cloning the repository to remote -
@@ -7,7 +8,6 @@ Read requirements.txt before proceeding.
 If working on linux system (Ubuntu 20.04+) run script "run.sh" ($./run.sh).
 If working on windows, open "run.sh" and install required libraries.
 Before running "FaceDetection.py" load the training images into ./images/training/ and the test images into ./images/testing/ .
-
 
 # 08-10-2020
 This is the second log by Kevin Sebastian. 
