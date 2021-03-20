@@ -1,0 +1,5 @@
+#installing scipy, do not install latest scipy
+sudo apt-get install libatlas-base-dev gfortran
+
+pip3 install tensorflow scipy==1.1.0 sklearn pillow imageio
+python3 ./facenet/src/classifier.py TRAIN ./dataset ./facenet/20180402-114759/20180402-114759.pb classified.pk
