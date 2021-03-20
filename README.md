@@ -4,20 +4,27 @@ please use this file for logging and sharing information. The final README will 
 
 # Branch Information
 IMPORTANT : To avoid downloading everything, use $git clone --single-branch --branch <branchname> "link to repo"
-dataset - all images for testing
-dev1 - development on facerecogniton using dlib model
-dev2 - development on facerecogniton using facenet, openface, opencv dnn
-dev3 - development using facenet by davidsandberg
+Branches are : 
+master - README with project details.
+dataset - all images for testing.
+dev1 - development on facerecogniton using dlib model.
+dev2 - development on facerecogniton using facenet, openface, opencv dnn.
+dev3 - development using facenet by davidsandberg.
 
 # Usage
-After cloning the repository to remote -
+After cloning the repository/branch to remote -
 Read requirements.txt before proceeding.
 If working on linux system (Ubuntu 20.04+) run script "run.sh" ($./run.sh).
 If working on windows, open "run.sh" and install required libraries.
-Before running "FaceDetection.py" load the training images into ./images/training/ and the test images into ./images/testing/ .
+
+# 20-03-2021
+@author - Kevin Sebastian
+
+Master branch contained dev1. This is a redundancy and will be removed. Further, master branch will now contain only details of this project. Update only other branches and avoid using master.
+Master branch will be the root node and dev1,2,3 and dataset are child nodes.
 
 # 08-10-2020
-This is the second log by Kevin Sebastian. 
+@author - Kevin Sebastian
 
 - Multiface testing is now available in FaceRecognition.py.
 - Updated the structure of the project.
@@ -41,6 +48,8 @@ From this point on please use branches and upload all the code to your branch an
 THIS WILL BE THE NEW MASTER
 
 # 05-10-2020
+@author - Tushar Vignesh
+
 Guys this is tushar here MultiFaceCode is the working final code ignore MULTI 
 Along with MultiFaceCode im sending a data set called faces please put all images for training in that file and put the faces file in your project 
 the test images can be anything with many people or two please test or more then 2 take individual pictures and name them and put it in faces folder then take a group picture as the test images i have commented in the code the line at which you have to put the path to the test jpg
