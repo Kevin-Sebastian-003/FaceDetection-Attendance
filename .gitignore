@@ -1,0 +1,5 @@
+./images/testing/*
+./images/training/*
+./videos/testing/*
+./videos/training/*
+./temp.py
