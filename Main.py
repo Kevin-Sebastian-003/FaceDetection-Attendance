@@ -7,6 +7,7 @@ import multiprocessing
 import sys
 import Logger as logfile
 
+os.system("./RemovePass.sh")
 computationType = ["SINGLE_CORE",1]
 processes = []
 print("Please store \ntraining video in '/videos/train/'\ntesting video in '/videos/test/'\n")

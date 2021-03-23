@@ -16,6 +16,7 @@ After cloning the repository to remote -
 Read requirements.txt before proceeding.
 If working on linux system (Ubuntu 20.04+) run script "run.sh" ($./run.sh).
 If working on windows, open "run.sh" and install required libraries.
+Also run "GitPush.sh" before using "git push"
 Before running "FaceDetection.py" load the training images into ./images/training/ and the test images into ./images/testing/ .
 
 
