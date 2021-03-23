@@ -5,11 +5,13 @@ import os
 import time
 import multiprocessing
 import sys
-import Logger as logfile
+import logging
 
 os.system("./RemovePass.sh")
 computationType = ["SINGLE_CORE",1]
 processes = []
+logging.basicConfig(filename='logfile.log', filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
+
 print("Please store \ntraining video in '/videos/train/'\ntesting video in '/videos/test/'\n")
 if input("Is the above conditon is met? (y/n): ") != 'y':
     sys.exit(0)

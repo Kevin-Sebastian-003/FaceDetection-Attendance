@@ -4,7 +4,9 @@ import cv2
 import face_recognition as fr
 import numpy as np
 import multiprocessing
-import Logger as logfile
+import logging
+
+logging.basicConfig(filename='logfile.log', filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 def encoder(dir):
     """
@@ -30,7 +32,7 @@ def encoder(dir):
                 encoding = fr.face_encodings(loadedImage)[0]
                 encoded[f.split(".")[0]] = list(encoding)
             except:
-                logfile.log_it("Face wasn't detected : "+dir+f)
+                logging.error("Face wasn't detected : "+dir+f)
         # json file wil contain the encoded data for each usn
         fileName = "cached_encodings/" + dir.split("/")[2] + ".json"
         averageEncodings = [0] * 128
@@ -40,7 +42,7 @@ def encoder(dir):
             averageEncodings[i]=averageEncodings[i]/len(encoded.keys())
         with open(fileName, 'w') as outfile:
             json.dump(averageEncodings, outfile)
-        logfile.log_it("created encoding for : " + dir.split("/")[2])
+        logging.error("created encoding for : " + dir.split("/")[2])
 
 def load_encodings():
     """

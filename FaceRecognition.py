@@ -5,7 +5,8 @@ import cv2
 import face_recognition as fr
 import numpy as np
 import multiprocessing
-import Logger as logfile
+import logging
+logging.basicConfig(filename='logfile.log', filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 def comparator(fileName, trainedFaces,resultQueue):
     """
@@ -26,7 +27,7 @@ def comparator(fileName, trainedFaces,resultQueue):
         print (res)
         
     except Exception as e:
-            logfile.log_it(e)
+            logging.error(e)
 
 
 #     # path = "images/training/"

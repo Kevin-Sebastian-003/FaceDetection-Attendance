@@ -5,6 +5,7 @@ rm -r images/training/
 rm -r videos/testing/
 rm -r videos/training/
 mkdir cached_encodings/
+rm logfile.log
 mkdir images/testing/
 mkdir images/training/
 mkdir videos/testing/
